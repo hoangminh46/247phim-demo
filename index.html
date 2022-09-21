@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48ca25f387.js" crossorigin="anonymous"></script>
+    <title>Web phim</title>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="side-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://247phim.net/wp-content/themes/halimmovies/img/logo.svg" alt="247phim.com">
+            </div>
+            <ul class="header-list header-list__hide">
+                <li class="header-item header-item__center">
+                    <p>Phim lẻ</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="header-dropdown">
+                        <li class="dropdown-item">Phim lẻ 2022</li>
+                        <li class="dropdown-item">Phim lẻ 2021</li>
+                        <li class="dropdown-item">Phim lẻ 2020</li>
+                        <li class="dropdown-item">Phim lẻ 2019</li>
+                        <li class="dropdown-item">Phim lẻ 2018</li>
+                        <li class="dropdown-item">Phim lẻ 2017</li>
+                        <li class="dropdown-item">Phim lẻ 2016</li>
+                        <li class="dropdown-item">Phim lẻ 2015</li>
+                        <li class="dropdown-item">Phim lẻ trước 2015</li>
+                    </ul>
+                </li>
+                <li class="header-item header-item__center">
+                    <p>Phim bộ</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="header-dropdown">
+                        <li class="dropdown-item">Phim bộ Hàn Quốc</li>
+                        <li class="dropdown-item">Phim bộ Trung Quốc</li>
+                        <li class="dropdown-item">Phim bộ Mỹ</li>
+                        <li class="dropdown-item">Anime</li>
+                        <li class="dropdown-item">GameShow</li>
+                        <li class="dropdown-item">Tv Shows</li>
+                        <li class="dropdown-item">Phim bộ Anh</li>
+                        <li class="dropdown-item">Clip ngắn</li>
+                    </ul>
+                </li>
+                <li class="header-item header-item__center">
+                    <p>Quốc gia</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="header-dropdown">
+                        <li class="dropdown-item">Ấn Độ</li>
+                        <li class="dropdown-item">Anh</li>
+                        <li class="dropdown-item">Canada</li>
+                        <li class="dropdown-item">Châu Á</li>
+                        <li class="dropdown-item">Đức</li>
+                        <li class="dropdown-item">Hàn Quốc</li>
+                        <li class="dropdown-item">Mỹ</li>
+                        <li class="dropdown-item">Nga</li>
+                        <li class="dropdown-item">Nhật Bản</li>
+                        <li class="dropdown-item">Pháp</li>
+                        <li class="dropdown-item">Quốc gia khác</li>
+                        <li class="dropdown-item">Tây Ban Nha</li>
+                        <li class="dropdown-item">Thái Lan</li>
+                        <li class="dropdown-item">Trung Quốc</li>
+                        <li class="dropdown-item">Việt Nam</li>
+                    </ul>
+                </li>
+                <li class="header-item header-item__center">
+                    <p>Thể loại</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="header-dropdown">
+                        <li class="dropdown-item">Không Thể Bỏ Lỡ</li>
+                        <li class="dropdown-item">Phim 18+</li>
+                        <li class="dropdown-item">Phim chiếu rạp</li>
+                        <li class="dropdown-item">Phim mới</li>
+                        <li class="dropdown-item">Góc Ký Ức</li>
+                        <li class="dropdown-item">Siêu anh hùng</li>
+                        <li class="dropdown-item">LGBTQ+</li>
+                        <li class="dropdown-item">Hoạt hình</li>
+                        <li class="dropdown-item">Kinh dị</li>
+                        <li class="dropdown-item">Tâm lý</li>
+                        <li class="dropdown-item">Hài hước</li>
+                        <li class="dropdown-item">Hành động</li>
+                        <li class="dropdown-item">Bom tấn</li>
+                        <li class="dropdown-item">Phiêu lưu</li>
+                        <li class="dropdown-item">Kịch tính, hồi hộp</li>
+                        <li class="dropdown-item">Tình cảm, lãng mạn</li>
+                        <li class="dropdown-item">Viễn tưởng</li>
+                        <li class="dropdown-item">Cổ trang</li>
+                        <li class="dropdown-item">Hình sự</li>
+                        <li class="dropdown-item">Chiến tranh</li>
+                        <li class="dropdown-item">Âm nhạc - Thể thao</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="header-list">
+                <li class="header-item">
+                    <div class="input-search">
+                        <input type="text" name="" id="" placeholder="Nhập từ khóa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </li>
+                <li class="header-item header-item__user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="user-info">
+                        <a href="">Tài khoản</a>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <ul class="header-dropdown header-dropdown__user">
+                        <li class="dropdown-item">Đăng nhập</li>
+                        <li class="dropdown-item">Yêu thích</li>
+                        <li class="dropdown-item">Đang xem</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="slider">
+            <div class="slider-image">
+                <img src="./images/slider1.jpg" alt="">
+            </div>
+            <div class="slider-des">
+                <h3>THE BOYS (SEASON 3)</h3>
+                <h4>SIÊU ANH HÙNG PHÁ HOẠI (PHẦN 3)</h4>
+            </div>
+            <div class="slider-control__left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="slider-control__right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="fade-image"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="content col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="title-cate col-12">
+                        <a>Không thể bỏ lỡ</a>
+                        <a href="">Xem thêm <i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+                    <div class="content-item row">
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie1.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                            <p class="item-desc">Eve (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    14.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie8.jpg" alt="">
+                                <div class="episode-number">6/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Bản Án Của Alexie Navalny</h4>
+                            <p class="item-desc">Navalny (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    16.2 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie2.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Vẻ Đẹp Ma Mị</h4>
+                            <p class="item-desc">Chom Chod (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    8.6 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie3.jpg" alt="">
+                                <div class="episode-number">1/6</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Cô Gái Marvel (Phần 1)</h4>
+                            <p class="item-desc">Ms. Marvel (Season 1) (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    25.2 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie4.jpg" alt="">
+                                <div class="episode-number">Full</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Gánh Nặng Ngàn Cân Của Tài Năng Kiệt Xuất</h4>
+                            <p class="item-desc">The Unbearable Weight Of Massive Talents (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    18.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie5.jpg" alt="">
+                                <div class="episode-number">4/8</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Siêu Anh Hùng Phá Hoại (Phần 3)</h4>
+                            <p class="item-desc">The Boys (Season 3) (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    4.9 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie6.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</h4>
+                            <p class="item-desc">Jujutsu Kaisen Movie (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    18.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie7.jpg" alt="">
+                                <div class="episode-number">Full</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Ấu Trùng Lava: Mặt Dây Chuyền</h4>
+                            <p class="item-desc">Larva Pendant (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    14.7 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-cate col-12">
+                        <a>Phim chiếu rạp</a>
+                        <a href="">Xem thêm <i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+                    <div class="content-item row">
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie1.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                            <p class="item-desc">Eve (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    14.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie8.jpg" alt="">
+                                <div class="episode-number">6/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Bản Án Của Alexie Navalny</h4>
+                            <p class="item-desc">Navalny (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    16.2 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie2.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Vẻ Đẹp Ma Mị</h4>
+                            <p class="item-desc">Chom Chod (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    8.6 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie3.jpg" alt="">
+                                <div class="episode-number">1/6</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Cô Gái Marvel (Phần 1)</h4>
+                            <p class="item-desc">Ms. Marvel (Season 1) (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    25.2 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie4.jpg" alt="">
+                                <div class="episode-number">Full</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Gánh Nặng Ngàn Cân Của Tài Năng Kiệt Xuất</h4>
+                            <p class="item-desc">The Unbearable Weight Of Massive Talents (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    18.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie5.jpg" alt="">
+                                <div class="episode-number">4/8</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Siêu Anh Hùng Phá Hoại (Phần 3)</h4>
+                            <p class="item-desc">The Boys (Season 3) (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    4.9 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie6.jpg" alt="">
+                                <div class="episode-number">4/16</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Jujutsu Kaisen 0: Chú Thuật Hồi Chiến</h4>
+                            <p class="item-desc">Jujutsu Kaisen Movie (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    18.3 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-item col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="movie-image">
+                                <img src="./images/movie7.jpg" alt="">
+                                <div class="episode-number">Full</div>
+                                <div class="movie-image__layer">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Ấu Trùng Lava: Mặt Dây Chuyền</h4>
+                            <p class="item-desc">Larva Pendant (2022)</p>
+                            <div class="item-rate">
+                                <div class="item-rate__watch">
+                                    <i class="fa-solid fa-eye"></i>
+                                    14.7 K
+                                </div>
+                                <div class="item-rate__star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="side-menu">
+                        <img src="./images/side-banner.png" alt="" class="side-image">
+                        <div class="side-item">
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-menu">
+                        <img src="./images/side-banner.png" alt="" class="side-image">
+                        <div class="side-item">
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item movie-item__side">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="movie-side__desc">
+                                    <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                    <p class="item-desc">Eve (2022)</p>
+                                    <div class="item-rate">
+                                        <div class="item-rate__watch">
+                                            <i class="fa-solid fa-eye"></i>
+                                            14.3 K
+                                        </div>
+                                        <div class="item-rate__star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="content col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="title-cate col-12">
+                            <a>Không thể bỏ lỡ</a>
+                            <a href="">Xem thêm <i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                        <div class="content-item row">
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="title-cate col-12">
+                            <a>Phim mới</a>
+                            <a href="">Xem thêm <i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                        <div class="content-item row">
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-cate col-12">
+                            <a>Phim bộ</a>
+                            <a href="">Xem thêm <i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                        <div class="content-item row">
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="movie-image">
+                                    <img src="./images/movie1.jpg" alt="">
+                                    <div class="episode-number">4/16</div>
+                                    <div class="movie-image__layer">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="item-title">Thiên Nga Bóng Đêm</h4>
+                                <p class="item-desc">Eve (2022)</p>
+                                <div class="item-rate">
+                                    <div class="item-rate__watch">
+                                        <i class="fa-solid fa-eye"></i>
+                                        14.3 K
+                                    </div>
+                                    <div class="item-rate__star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-left col-lg-2 col-sm-12 col-12">
+                        <img src="https://247phim.net/wp-content/themes/halimmovies/img/logo.svg" alt="">
+                        <img src="./images/footer1.png" alt="">
+                        <img src="./images/footer2.png" alt="">
+                    </div>
+                    <div class="footer-center col-lg-8 col-sm-12 col-12">
+                        <p>Công ty cổ phần Truyền thông HwangMinh - Người đại diện: Hoàng Công Minh</p>
+                        <p>Trụ sở: 484 Lạch Tray, Ngô Quyền, Hải Phòng</p>
+                        <p>Điện thoại: 0123456789. Email: hwangminh12345@gmail.com</p>
+                        <p>Số giấy chứng nhận đăng ký kinh doanh: 0101778163 do Sở Kế Hoạch Đầu Tư Thành Phố Hà Nội cấp vào ngày 28/07/2005</p>
+                        <p>Giấy phép Cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng Internet số 568/GP-BTTTT cấp ngày 7/12/2020.</p>
+                    </div>
+                    <div class="footer-right col-lg-2 col-sm-12 col-12">
+                        <div class="footer-support">
+                            <i class="fa-regular fa-message"></i>
+                            <p>Hỗ Trợ</p>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fa-regular fa-address-card"></i>
+                            <p>0123456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
